@@ -3,11 +3,11 @@ require 'rails_helper'
 RSpec.describe 'Recipes Index' do
   describe 'Search for Recipes' do
     it 'Shows a list of recipes for country searched for' do
-      get api_v1_recipes_path
+      get "/api/v1/recipes?country=thailand"
 
       recipes = JSON.parse(response.body, symbolize_names: true)
 
-      expect(recipes[:data].count).to eq(4)
+      expect(recipes[:data].count).to eq(20)
 
       expect(response).to be_successful
 

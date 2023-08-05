@@ -8,7 +8,7 @@ class EdamamService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def country_recipes
-    get_url('?type=public&q=thailand&app_id=00177db4&app_key=%20f4298302c7c122f63d642b9b18413f3d')
+  def country_recipes(country)
+    get_url("?type=public&q=#{country}&app_id=#{ENV['edamam_id']}&app_key=%#{ENV['edamam_key']}")
   end
 end
