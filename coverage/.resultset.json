@@ -188,7 +188,165 @@
           1,
           1,
           1,
+          1,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/spec/requests/api/v1/recipes/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          20,
+          null,
+          20,
+          20,
+          20,
+          20,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/controllers/api/v1/learning_resources_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/facades/learning_resources_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/services/youtube_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/services/unsplash_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/poros/learning_resource.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          20,
+          null,
+          null,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/serializers/learning_resource_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
           null,
           null
         ]
@@ -201,12 +359,6 @@
           1,
           1,
           null,
-          null
-        ]
-      },
-      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
           null
         ]
       },
@@ -268,6 +420,6 @@
         ]
       }
     },
-    "timestamp": 1691266670
+    "timestamp": 1691294510
   }
 }
