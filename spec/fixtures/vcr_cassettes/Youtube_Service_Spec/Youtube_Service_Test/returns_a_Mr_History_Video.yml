@@ -1,0 +1,229 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyDrOGfc8U0YILHpXdi_WGcV_5V6kgCNonc&part=snippet&q=laos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 06 Aug 2023 18:17:43 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "d6g3CJqUU0lNqN5Rr1VUdi1lOiA",
+          "nextPageToken": "CAUQAA",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 29,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "9jG4jK6CR5oGC_zkoSl11Xq_AaQ",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "uw8hjVqxMXw"
+              },
+              "snippet": {
+                "publishedAt": "2021-08-29T10:13:10Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Laos",
+                "description": "Audio Requiring Attribution: LukeIRL: https://freesound.org/people/LukeIRL/sounds/176134/ RTB45: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/uw8hjVqxMXw/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/uw8hjVqxMXw/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/uw8hjVqxMXw/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-08-29T10:13:10Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "FgraZWcGtIsmLrA1jDUZtFPFq-4",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "dtW_3p61WOI"
+              },
+              "snippet": {
+                "publishedAt": "2022-02-09T00:06:58Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Micronesia",
+                "description": "Pictures Requiring Attribution: Motoki Kurabayashi: https://commons.wikimedia.org/wiki/File:Weno_island.jpg Yanajin33: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/dtW_3p61WOI/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/dtW_3p61WOI/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/dtW_3p61WOI/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-02-09T00:06:58Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "7br3RCyoWxxQOLyjIIDgqN365RE",
+              "id": {
+                "kind": "youtube#playlist",
+                "playlistId": "PLVRhJQ5GttaJJo5HY1JcEVihUpSV6fz5o"
+              },
+              "snippet": {
+                "publishedAt": "2019-08-02T20:36:34Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "Super Quick Histories!",
+                "description": "",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/MfGoJrqh0Gk/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/MfGoJrqh0Gk/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/MfGoJrqh0Gk/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-08-02T20:36:34Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "TDCozssNwt1KgB-CB4i3mXW5vKc",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "s31ymVzOfGY"
+              },
+              "snippet": {
+                "publishedAt": "2019-09-24T08:31:33Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "15 Things Not From the Country You Think",
+                "description": "MrHistory.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-09-24T08:31:33Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "iMiqeyY5ZfGU5Sp0kd3r0KS0ywA",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "fK2p_ZcWUl8"
+              },
+              "snippet": {
+                "publishedAt": "2022-01-04T04:33:10Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of the Marshall Islands",
+                "description": "Audio Requiring Attribution: https://freesound.org/people/CGEffex/sounds/95745/ Pictures Requiring Attribution: UNESCO: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/fK2p_ZcWUl8/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/fK2p_ZcWUl8/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/fK2p_ZcWUl8/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-01-04T04:33:10Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Sun, 06 Aug 2023 18:17:43 GMT
+recorded_with: VCR 6.2.0
