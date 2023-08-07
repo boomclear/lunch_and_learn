@@ -5,5 +5,6 @@ class User < ApplicationRecord
   validates :password_digest, presence: true
 
   has_many :api_keys
+  has_many :favorites
 
 end
