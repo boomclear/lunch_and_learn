@@ -4,7 +4,18 @@ class AirQuality
   def initialize(city, data)
     @city = city
     @aqi = data[:overall_aqi]
-    @pm25_concentration = data['PM2.5'][:concentration]
+    @pm25_concentration = data[:'PM2.5'][:concentration]
     @co_concentration = data[:CO][:concentration]
+  end
+
+  def formatted
+    { data:
+  { id: 'null',
+    type: 'air_quality',
+    city: @city,
+    attributes:
+        { aqi: @aqi,
+          pm25_concentration: @pm25_concentration,
+          co_concentration: @co_concentration } } }
   end
 end
