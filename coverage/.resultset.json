@@ -189,6 +189,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null
@@ -241,6 +242,61 @@
           null,
           1,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/spec/models/api_key_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/models/api_key.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
           null,
           null
         ]
@@ -389,29 +445,81 @@
           null,
           1,
           1,
-          0,
-          0,
-          0,
-          0,
+          20,
+          20,
+          20,
+          20,
           null,
-          0,
-          0,
-          0,
-          0,
+          20,
+          20,
+          20,
+          20,
           null,
-          0,
-          0,
-          0,
-          0,
+          20,
+          20,
+          20,
+          20,
           null,
-          0,
-          0,
-          0,
-          0,
+          20,
+          20,
+          20,
+          20,
+          null,
+          null,
           null,
           1,
           1,
           null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/spec/requests/api/v1/users/create_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
           null,
           null,
           null
@@ -532,7 +640,7 @@
           1,
           3,
           3,
-          40,
+          60,
           null,
           null,
           null,
@@ -562,11 +670,11 @@
           1,
           1,
           1,
-          41,
-          41,
-          41,
-          41,
-          41,
+          61,
+          61,
+          61,
+          61,
+          61,
           null,
           null
         ]
@@ -705,8 +813,41 @@
           1,
           null
         ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/austinwoods/Documents/3mod/projects/lunch_and_learn/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1691352689
+    "timestamp": 1691367999
   }
 }
