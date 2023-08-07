@@ -10,8 +10,8 @@ RSpec.describe 'Learning Resouces Page' do
         expect(response).to be_successful
         expect(resources[:data]).to have_key(:id)
         expect(resources[:data]).to have_key(:type)
-        expect(resources[:data][:id]).to eq("null")
-        expect(resources[:data][:type]).to eq("learning_resource")
+        expect(resources[:data][:id]).to eq('null')
+        expect(resources[:data][:type]).to eq('learning_resource')
         expect(resources[:data][:id]).to be_a(String)
         expect(resources[:data][:type]).to be_a(String)
 

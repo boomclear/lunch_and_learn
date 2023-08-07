@@ -11,5 +11,8 @@ class CountriesService
   def country_list
     get_url("all?fields=name")
   end
-end
 
+  def get_capital(country)
+    get_url("name/#{country}?fields=capital")
+  end
+end

@@ -10,4 +10,8 @@ class CountriesFacade
     end
   end
 
+  def get_capital(country)
+    capital = service.get_capital(country)
+    capital.dig(0, :capital, 0)
+  end
 end
