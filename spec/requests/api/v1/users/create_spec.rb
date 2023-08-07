@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'Register User' do
   describe 'Post request to register user' do
+    ApiKey.destroy_all
+    User.destroy_all
     it 'creates a user instance if a json payload is posted to the api', :vcr do
       user_params = {
         name: 'Odell',
@@ -40,7 +42,7 @@ RSpec.describe 'Register User' do
 
       error = JSON.parse(response.body, symbolize_names: true)
 
-      expect(error).to eq({:password_confirmation=>["doesn't match Password"]})
+      expect(error).to eq({ password_confirmation: ["doesn't match Password"] })
     end
   end
 end
