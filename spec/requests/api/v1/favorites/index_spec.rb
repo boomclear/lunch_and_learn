@@ -29,5 +29,12 @@ RSpec.describe 'Register User' do
         expect(favorite[:attributes][:created_at]).to be_a(String)
       end
     end
+    it 'renders error when api key invalid' do
+      get "/api/v1/favorites?api_key=test"
+
+      error = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error).to eq('Invalid API Key')
+    end
   end
 end

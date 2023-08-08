@@ -39,5 +39,20 @@ RSpec.describe 'login in through api' do
       
       expect(json_response).to eq("Invalid Credentials")
     end
+    
+    it 'returns 400 response if user posts incorrect credentials' do
+      user = User.create!(name: 'boom', password: 'test', password_confirmation: 'test', email: 'boom@gmail.com')
+      user.api_keys.create!(token: SecureRandom.hex)
+      user_params = {
+        email: 'a;lsdjfa;lsdjf@gmail.com',
+        password: 'badpassword'
+      }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
+      post '/api/v1/sessions', headers:, params: JSON.generate(user_params)
+
+      json_response = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json_response).to eq("Invalid Credentials")
+    end
   end
 end
