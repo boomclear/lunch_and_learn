@@ -10,4 +10,10 @@ class Api::V1::SessionsController < ApplicationController
       render json: JSON.generate('Invalid Credentials'), status: :bad_request
     end
   end
+
+  private 
+
+  def user_params
+    params.permit(:email, :password)
+  end
 end

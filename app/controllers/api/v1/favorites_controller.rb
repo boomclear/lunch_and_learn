@@ -21,4 +21,10 @@ class Api::V1::FavoritesController < ApplicationController
       render json: JSON.generate('Invalid API Key'), status: :unauthorized
     end
   end
+
+  private
+
+  def favorites_params
+    params.permit(:api_key, :country, :recipe_link, :recipe_title)
+  end
 end

@@ -4,4 +4,9 @@ class Api::V1::LearningResourcesController < ApplicationController
     render json: LearningResourceSerializer.new(learning_resource)
   end
 
+  private
+
+  def country_params
+    params.permit(:country)
+  end
 end
