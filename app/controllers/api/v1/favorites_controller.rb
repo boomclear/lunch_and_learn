@@ -1,8 +1,7 @@
 class Api::V1::FavoritesController < ApplicationController
   def create
     if api = ApiKey.find_by(token: params[:api_key])
-      favorite = api.user.favorites.new(country: params[:country], recipe_link: params[:recipe_link],
-                                        recipe_title: params[:recipe_title])
+      favorite = api.user.favorites.new(favorites_params)
       if favorite.save
         render json: JSON.generate({ success: 'Favorite added successfully' }), status: :created
       else
@@ -25,6 +24,6 @@ class Api::V1::FavoritesController < ApplicationController
   private
 
   def favorites_params
-    params.permit(:api_key, :country, :recipe_link, :recipe_title)
+    params.permit(:country, :recipe_link, :recipe_title)
   end
 end
