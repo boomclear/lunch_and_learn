@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Register User' do
   describe 'Post request to register user' do
     ApiKey.destroy_all
+    Favorite.destroy_all
     User.destroy_all
     it 'creates a user instance if a json payload is posted to the api', :vcr do
       user_params = {
