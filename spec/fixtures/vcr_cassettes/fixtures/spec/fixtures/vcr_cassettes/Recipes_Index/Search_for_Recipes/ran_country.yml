@@ -35,7 +35,7 @@ http_interactions:
   recorded_at: Sun, 06 Aug 2023 19:58:31 GMT
 - request:
     method: get
-    uri: https://api.edamam.com/api/recipes/v2?app_id=00177db4&app_key=%20f4298302c7c122f63d642b9b18413f3d&q=Chile&type=public
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<EDAMAM_APPLICATION_ID>&app_key=%20<EDAMAM_API_KEY>&q=Chile&type=public
     body:
       encoding: US-ASCII
       string: ''

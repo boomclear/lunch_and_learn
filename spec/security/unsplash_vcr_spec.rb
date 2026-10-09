@@ -63,8 +63,9 @@ RSpec.describe 'Unsplash cassette credential protection' do
     it "leaves unrelated content intact when the key is #{key.nil? ? 'unset' : 'empty'}" do
       ENV['unsplash_key'] = key
       cassette = record_response('dummy-unconfigured-key')
-      expect(cassette).to include('client_id=dummy-unconfigured-key')
-      expect(cassette).not_to include('<UNSPLASH_ACCESS_KEY>')
+      expect(cassette.include?('dummy-unconfigured-key')).to be(false)
+      expect(cassette).to include('client_id=<UNSPLASH_ACCESS_KEY>', 'query=laos')
+      expect(cassette).to include('{"results":[{"description":"Laos"}]}')
     end
   end
 

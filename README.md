@@ -91,7 +91,7 @@ response:
         "attributes": {
             "name": "Odell",
             "email": "goodboy@ruffruff.com",
-            "api_key": "ac757e90b18b8d9bbaf75fb35b5fbee5"
+            "api_key": "<APPLICATION_API_KEY>"
         }
     }
 }
@@ -120,7 +120,7 @@ response:
         "attributes": {
             "name": "Odell",
             "email": "goodboy@ruffruff.com",
-            "api_key": "ac757e90b18b8d9bbaf75fb35b5fbee5"
+            "api_key": "<APPLICATION_API_KEY>"
         }
     }
 }
@@ -134,7 +134,7 @@ request:
 
 ```
 {
-    "api_key": "ac757e90b18b8d9bbaf75fb35b5fbee5",
+    "api_key": "<APPLICATION_API_KEY>",
     "recipe_link": "www.google.com",
     "recipe_title": "food",
     "country": "laos"
@@ -149,7 +149,7 @@ response:
 }
 ```
 
-**GET /api/v1/favorites?api_key=ac757e90b18b8d9bbaf75fb35b5fbee5**
+**GET /api/v1/favorites?api_key=<APPLICATION_API_KEY>**
 
 This endpoint will fetch all favorites saved under your user(api key).
 

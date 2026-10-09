@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyDrOGfc8U0YILHpXdi_WGcV_5V6kgCNonc&part=snippet&q=laos
+    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=<GOOGLE_API_KEY>&part=snippet&q=laos
     body:
       encoding: US-ASCII
       string: ''
