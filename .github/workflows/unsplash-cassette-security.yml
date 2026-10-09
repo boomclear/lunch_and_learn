@@ -1,0 +1,25 @@
+name: Unsplash cassette security
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  offline-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1
+        with:
+          ruby-version: '3.2.2'
+      # This Rails-independent spec needs no database or service credentials.
+      # Versions match the application's locked test dependencies.
+      - name: Install focused test dependencies
+        run: gem install --no-document vcr:6.2.0 webmock:3.18.1 rspec:3.12.0 faraday:2.7.10
+      - name: Verify redaction and playback without network access
+        run: rspec spec/security/unsplash_vcr_spec.rb
