@@ -1,4 +1,4 @@
-name: Unsplash cassette security
+name: Provider cassette security
 
 on:
   pull_request:
@@ -22,4 +22,4 @@ jobs:
       - name: Install focused test dependencies
         run: gem install --no-document vcr:6.2.0 webmock:3.18.1 rspec:3.12.0 faraday:2.7.10
       - name: Verify redaction and playback without network access
-        run: rspec spec/security/unsplash_vcr_spec.rb
+        run: rspec spec/security
