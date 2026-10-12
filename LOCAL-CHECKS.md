@@ -1,12 +1,21 @@
 # Run existing checks locally
 
-Austin requested local checks on his Mac for every project that already has checks on October 12, 2026. Automatic hosted triggers are removed; existing hosted jobs remain available only by explicit manual dispatch and can consume minutes if enabled. Repository workflow settings are separately disabled. Disabling a check is not a passing result.
+Austin requested local checks on his Mac for every project that already has checks on October 12, 2026. This PR removes automatic hosted triggers; default-branch files change after merge. Existing hosted jobs remain available only by explicit manual dispatch and can consume minutes if enabled. Repository workflow settings are separately disabled. Disabling a check is not a passing result.
 
 Run one project's checks at a time from an isolated checkout. Use synthetic data only. The script stops on the first failure. Resolve it and rerun; an early failure does not prove later checks passed. Existing coverage floors, security regression suites and dependency audits remain in the commands.
 
 ## Setup
 
-Use the versions and dependency commands in the existing workflow and project development guide. Python projects use an isolated virtual environment; install their existing `requirements-dev.txt` (Playbook: from `scaffold/`). claude-task-runner uses `pip install -e ".[dev]"`. Ruby checks need Ruby 3.2.2 and the locked bundle; lunch_and_learn uses `gem install --no-document vcr:6.2.0 webmock:3.18.1 rspec:3.12.0 faraday:2.7.10`. The script does not install Python/Ruby dependencies or change global tools.
+Use the existing workflow’s Ruby **3.2.2**, selected before these commands; verify `ruby --version`. The Mac’s system Ruby 2.6.10 is insufficient. From an isolated checkout, prepare only the existing locked/focused dependencies:
+
+```bash
+gem install --no-document --install-dir "$PWD/.local-check-gems" vcr:6.2.0 webmock:3.18.1 rspec:3.12.0 faraday:2.7.10
+export GEM_HOME="$PWD/.local-check-gems"
+export GEM_PATH="$GEM_HOME"
+export PATH="$GEM_HOME/bin:$PATH"
+```
+
+The wrapper does not install Ruby or gems, and no global Ruby installation is part of this migration. Keep local gems/bundle configuration untracked.
 
 ## Run
 
